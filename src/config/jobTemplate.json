@@ -1,0 +1,33 @@
+{
+  "OutputGroups": [
+    {
+      "CustomName": "Audio Output",
+      "Name": "File Group",
+      "Outputs": [
+        {
+          "Preset": "mp3",
+          "Extension": "mp3",
+          "NameModifier": "<FILE_NAME>-audio"
+        }
+      ],
+      "OutputGroupSettings": {
+        "Type": "FILE_GROUP_SETTINGS",
+        "FileGroupSettings": {
+          "Destination": "s3://<DESTINATION_BUCKET_NAME>/"
+        }
+      }
+    }
+  ],
+  "Inputs": [
+    {
+      "AudioSelectors": {
+        "Audio Selector 1": {
+          "DefaultSelection": "DEFAULT"
+        }
+      },
+      "VideoSelector": {},
+      "TimecodeSource": "ZEROBASED",
+      "FileInput": "s3://<SOURCE_BUCKET_NAME>/<FILE_NAME_WITH_EXT>"
+    }
+  ]
+}

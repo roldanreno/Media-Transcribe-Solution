@@ -1,0 +1,19 @@
+{
+  "AudioDescriptions": [
+    {
+      "AudioSourceName": "Audio Selector 1",
+      "CodecSettings": {
+        "Codec": "MP3",
+        "Mp3Settings": {
+          "Bitrate": 192000,
+          "Channels": 2,
+          "RateControlMode": "CBR",
+          "SampleRate": 48000
+        }
+      }
+    }
+  ],
+  "ContainerSettings": {
+    "Container": "RAW"
+  }
+}
